@@ -1,0 +1,19 @@
+article {
+    width: 90%;
+    margin: auto;
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 47em) {
+    #calendar {
+        margin: 80px auto;
+    }
+    article {
+        width: 100%;
+    }
+}

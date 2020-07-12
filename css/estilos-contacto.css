@@ -1,0 +1,84 @@
+iframe{
+    width: 80%;
+    height: 400px;
+    margin-top: 20px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.contenedor article{
+    padding-top: 30px;
+    margin: 0 30px 0 30px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+.formulario input[type="text"]{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 30px;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+    padding-left: 15px;
+    width: 95%;
+}
+.formulario input[type="submit"]{
+    align-self: flex-end;
+    padding: 8px;
+    color: #fff;
+    background-color: #0063b2;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.formulario input[type="submit"]:hover{
+    background-color: #008eff;
+}
+.formulario textarea{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 95%;
+}
+.error{
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    color: red;
+}
+.datos-contacto p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ubicacion{
+    margin-top: 60px;
+    text-align: center;
+}
+.ubicacion h2{
+    text-align: center;
+}
+#caracteres{
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 47em) {
+    iframe {
+        width: 80%;
+    }
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .formulario {
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+}

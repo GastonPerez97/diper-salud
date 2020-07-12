@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendario | DiPer Salud</title>
+    <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/7459688133.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/index.js"></script>
+    <script src='fullcalendar/packages/core/main.js'></script>
+    <script src='fullcalendar/packages/daygrid/main.js'></script>
+    <script src="js/calendario.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <img src="img/logo.png" class="logo">
+
+            <!-- Buscador -->
+            <div class="buscador">
+                <form>
+                    <input list="buscador" placeholder="Buscar...">
+                    <datalist id="buscador">
+                        <option value="Coronavirus COVID-19"></option>
+                        <option value="Dengue"></option>
+                        <option value="Sarampion"></option>
+                        <option value="Fiebre Amarilla"></option>
+                    </datalist>
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+
+            <div class="header-redes-container">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook header-redes"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter header-redes"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram header-redes"></i></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="enfermedades.html">ENFERMEDADES</a>
+                </li>
+                <li>
+                    <a href="calendario.html">VACUNACION</a>
+                </li>
+                <li>
+                    <a href="hospitales.html">HOSPITALES</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="desplegable"></a>
+    </header>
+
+    <main>
+        
+        <section>
+            <article>
+                <div id='calendar'></div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="containerFooter">
+        <div class="menu-inf">
+            <h4>Menu Inferior:</h4>
+            <p><a href="enfermedades.html">Enfermedades</a></p>
+            <p><a href="calendario.html">Vacunas</a></p>
+            <p><a href="hospitales.html">Hospitales</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+        </div>
+        <div class="redes-inf">
+            <h4>Redes Sociales:</h4>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>

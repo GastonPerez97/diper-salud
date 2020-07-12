@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enfermedades | DiPer Salud</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilos-enfermedades.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <script src="https://kit.fontawesome.com/7459688133.js" crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/funciones.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="containerHeader">
+      <img src="img/logo.png" class="logo">
+
+      <!-- Buscador -->
+      <div class="buscador">
+        <form>
+          <input list="buscador" placeholder="Buscar...">
+          <datalist id="buscador">
+            <option value="Coronavirus COVID-19"></option>
+            <option value="Dengue"></option>
+            <option value="Sarampion"></option>
+            <option value="Fiebre Amarilla"></option>
+          </datalist>
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+
+      <div class="header-redes-container">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook header-redes"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter header-redes"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram header-redes"></i></a>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="enfermedades.html">ENFERMEDADES</a>
+        </li>
+        <li>
+            <a href="calendario.html">VACUNACION</a>
+        </li>
+        <li>
+          <a href="hospitales.html">HOSPITALES</a>
+        </li>
+        <li>
+          <a href="contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="desplegable"></a>
+  </header>
+
+  <main>
+    <h1>Enfermedades</h1>
+    <section>
+      <article class="buscadorEnfermedades">
+        <i class="fas fa-search"></i>
+        <form class="filtro">
+          <input list="buscadorEnfermedades" placeholder="Filtrar por enfermedad">
+          <datalist id="buscadorEnfermedades">
+            <option value="Coronavirus COVID-19"></option>
+            <option value="Dengue"></option>
+            <option value="Sarampion"></option>
+            <option value="Fiebre Amarilla"></option>
+          </datalist>
+        </form>
+      </article>
+    </section>
+
+    <section class="enfermedades">
+      <article>
+        <div class="img_enfermedad">
+          <img src="img/coronovirus.jpg" alt="coronavirus">
+        </div>
+        <div class="descripcion_enfermedad">
+          <h2>Coronavirus COVID-19</h2>
+          <p>Enfermedad infecciosa causada por el virus SARS-CoV-2. Se detecto por primera vez en la ciudad China de
+            Wuhan, en diciembre de 2019. Se transmite principalmente a través de las goticulas generadas cuando una
+            persona infectada tose, estornuda o espira.</p>
+          <a href="enfermedad.html">Ver Detalle</a>
+        </div>
+      </article>
+
+      <article>
+        <div class="img_enfermedad">
+          <img src="img/dengue.jpg" class="img_enfermedad" alt=dengue>
+        </div>
+        <div class="descripcion_enfermedad">
+          <h2>Dengue</h2>
+          <p>Enfermedad viral transmitida por los mosquitos y de prevalencia en las áreas tropicales y
+            subtropicales.Aquellos que se contagian por segunda vez con el virus tienen un riesgo significativamente
+            mayor de desarrollar la enfermedad de manera más grave. Los síntomas son fiebre alta, sarpullido y dolor en
+            los músculos y las articulaciones. </p>
+          <p>El tratamiento incluye la ingesta de líquidos y el uso de analgésicos. Los casos más graves requieren
+            atención hospitalaria.</p>
+          <a href="enfermedad.html">Ver Detalle</a>
+        </div>
+      </article>
+
+      <article>
+        <div class="img_enfermedad">
+          <img src="img/sarampion.jpg" alt=sarampion>
+        </div>
+        <div class="descripcion_enfermedad">
+          <h2>Sarampion</h2>
+          <p>Infección viral grave en los niños pequeños, pero de fácil prevención mediante una vacuna. La enfermedad se
+            propaga rápidamente por el aire mediante pequeñas gotas de saliva al toser o estornudar. Los síntomas
+            incluyen tos, secreción nasal y sarpullido. </p>
+          <p>No hay ningún tratamiento para una infección establecida de sarampión, pero los antifebriles de venta libre
+            y la vitamina A pueden ayudar con los síntomas.</p>
+          <a href="enfermedad.html">Ver Detalle</a>
+        </div>
+      </article>
+
+      <article>
+        <div class="img_enfermedad">
+          <img src="img/fiebre-amarilla.jpg" alt=fiebre-amarilla>
+        </div>
+        <div class="descripcion_enfermedad">
+          <h2>Fiebre Amarilla</h2>
+          <p>Infección viral grave en los niños pequeños, pero de fácil prevención mediante una vacuna. La enfermedad se
+            propaga rápidamente por el aire mediante pequeñas gotas de saliva al toser o estornudar. Los síntomas
+            incluyen tos, secreción nasal y sarpullido.</p>
+          <a href="enfermedad.html">Ver Detalle</a>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="containerFooter">
+    <div class="menu-inf">
+      <h4>Menu Inferior:</h4>
+      <p><a href="enfermedades.html">Enfermedades</a></p>
+      <p><a href="calendario.html">Vacunas</a></p>
+      <p><a href="hospitales.html">Hospitales</a></p>
+      <p><a href="contacto.html">Contacto</a></p>
+    </div>
+    <div class="redes-inf">
+      <h4>Redes Sociales:</h4>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>

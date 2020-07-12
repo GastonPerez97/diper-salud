@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+/*Estilos principales de la pagina (Header, Footer, Nav, Pagina index)*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #eee9e7;
+}
+input[list] {
+    width: 30em;
+    min-width: 3em;
+    margin: 0 auto;
+    padding: 11px 20px;
+    font-size: 20px;
+    border: none;
+}
+header i {
+    font-size: 2em;
+}
+a i {
+    color: #000;
+}
+p.llama-al{
+    color: #fff;
+}
+p.sintomas{
+    color: #fff;
+}
+p.numero{
+    color: #fff;
+}
+div.telefono{
+    color: #fff;
+}
+h1 {
+    font-size: 9em;
+    margin: 30px auto;
+ /* text-shadow: 5px 5px 3px rgba(150, 150, 150, 1);*/
+}
+h4 {
+    margin-bottom: 10px;
+    font-family: Helvetica, Sans-Serif;
+}
+footer{
+    background: #0063b2;  /* fallback for old browsers */  
+    background-color: #0063b2;
+    padding: 1em 0;
+    height: 150px;
+    margin-top: 20px;
+}
+/*-----------------------Header---------------------------*/
+.containerHeader {
+    background: #E3F3FF;  /* fallback for old browsers */
+    background-color: #E3F3FF;
+    padding: 1em 0 1em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa-search {
+    background-color: #0063b2;
+    color: #fff;
+    padding: 8px;
+}
+.buscador {
+    min-width: 10%;
+}
+.buscador form {
+    display: flex;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.logo {
+    min-width: 150px;
+    width: 8%;
+}
+.header-redes-container {
+    margin-left: 1em;
+    display: flex;
+}
+.header-redes {
+    margin-right: 15px;
+}
+
+.header-redes:hover {
+    transform: scale(1.5) rotate(360deg) ;
+    transition: 0.5s;
+}
+
+/*-----------------------Nav---------------------------*/
+.menu {
+    background-color: #59898d; 
+    border-bottom: 5px solid #0063b2;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #E3F3FF;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.menu a:hover{
+    background-color: #E3F3FF;
+    color:#000;
+}
+a.desplegable{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-color: #5c5c5c;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    background-image: url(../img/hamburger.gif);
+    transition: 0.5s;
+    cursor: pointer;
+}
+a.desplegable:hover{
+    background-color: #06a8de;
+}
+.menu{
+    display: none;
+ }
+
+/*-----------------------Main---------------------------*/
+.titulo{
+    text-align: center;
+    margin-top: 0;
+}
+.paginas {
+    width: 80%;
+    margin: auto;
+}
+.paginas ul{
+    display: flex;
+    justify-content: space-around;
+}
+.paginas li{
+    list-style: none;
+    margin-bottom: 40px;
+}
+.paginas a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    width: 200px;
+    background-color: #0063b2;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.paginas a:hover {
+    background-color: #008eff;
+}
+.paginas i {
+    font-size: 120px;
+    padding: 50px;
+    background-color: #0063b2;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.slider img {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 21em;
+    object-fit: cover;
+}
+.llama{
+    height: 250px;
+    background-color: #59898d;
+    font-size: 25px;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+    margin-top: 1em;
+}
+.telefono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 150px;
+}
+.llama-al {
+    font-size: 70px;
+    text-transform: uppercase;
+    /*padding-right: 20px;*/
+    padding-bottom: 60px;
+}
+.telefono i {
+    margin-right: 50px;
+}
+
+/*-----------------------Footer---------------------------*/
+.containerFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 1em;
+    padding-left: 1em;
+    color: #fff;
+}
+.menu-inf a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    display: list-item;
+}
+.menu-inf a:hover {
+    text-decoration: underline;
+}
+.menu-inf p {
+    margin-bottom: 6px;
+    font-family: Helvetica, Sans-Serif;
+}
+.redes-inf a {
+    font-size: 2em;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.redes-inf i{
+    color: #fff;
+}
+
+.redes-inf i:hover {
+    transform: scale(1.5) rotate(360deg) ;
+    transition: 0.5s;
+}
+
+.redes-inf h4 {
+    text-align: center;
+}
+
+@media screen and (max-width: 452px) {
+    .header-redes-container {
+        display: none;
+    }
+    .buscador {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 47em) {
+    .menu ul {
+        display: inline;
+        text-align: center;
+    }
+    .titulo {
+        font-size: 15vw;
+        margin-top: 20px;
+    }
+    .paginas {
+        text-align: center;
+    }
+    .paginas a {
+        margin: 0 auto;
+    }
+    .paginas ul {
+        flex-direction: column;
+    }
+    .paginas i {
+        display: inline-flex;
+        margin-bottom: 20px;
+    }
+    .llama {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .llama-al {
+        padding: 0;
+        font-size: 2em;
+    }
+    .sintomas {
+        margin-top: 20px;
+    }
+    .telefono {
+        padding: 0;
+        font-size: 4em;
+    }
+    .containerFooter {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .containerFooter div {
+        margin: 15px 0 15px 0;
+    }
+    /* .slider img {
+        width: 100%;
+    } */
+}
+
+@media screen and (min-width: 47em) {
+    .titulo {
+        font-size: 7em;
+    }
+    .paginas {
+        text-align: center;
+    }
+    .paginas a {
+        margin: 0 auto;
+    }
+    .paginas ul {
+        flex-wrap: wrap;
+    }
+    .paginas li {
+        margin: 0 20px 40px 20px;
+    }
+    .paginas i {
+        display: inline-flex;
+        margin-bottom: 20px;
+    }
+    .llama {
+        height: auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .llama-al {
+        padding: 0;
+        font-size: 2em;
+    }
+    .telefono {
+        padding: 0;
+        font-size: 4.5em;
+    }
+    .telefono i {
+        margin-right: 25px;
+    }
+    .menu{
+        display: block;
+    }
+    a.desplegable{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 70em) {
+    .titulo {
+        font-size: 9em;
+    }
+}

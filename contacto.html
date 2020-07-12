@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto | DiPer Salud</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos-contacto.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/7459688133.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/contacto.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <img src="img/logo.png" class="logo">
+
+            <!-- Buscador -->
+            <div class="buscador">
+                <form>
+                    <input list="buscador" placeholder="Buscar...">
+                    <datalist id="buscador">
+                        <option value="Coronavirus COVID-19"></option>
+                        <option value="Dengue"></option>
+                    </datalist>
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+
+            <div class="header-redes-container">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook header-redes"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter header-redes"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram header-redes"></i></a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="enfermedades.html">ENFERMEDADES</a>
+                </li>
+                <li>
+                    <a href="calendario.html">VACUNACION</a>
+                </li>
+                <li>
+                    <a href="hospitales.html">HOSPITALES</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="desplegable"></a>
+    </header>
+
+    <main>
+        <section class="contenedor">
+            <article>
+                <h2>CONTACTO</h2>
+                <form class="formulario" action="#" method="post" onsubmit="return validar()">
+                    <input type="text" placeholder="Ingrese Nombre y Apellido" id="form-nombre">
+
+                    <input type="text" placeholder="Ingrese su Email" id="email">
+
+                    <input type="text" placeholder="Ingrese un Telefono" id="telefono">
+
+                    <textarea name="consulta" id="consulta" cols="40" rows="10" placeholder="Ingrese su Consulta"
+                        onkeyup="contadorCaracteres()" maxlength="1000"></textarea>
+                    <p><span id="caracteres"></span></p>
+                    <div id="mensaje-nombre" class="error"></div>
+                    <input type="submit" value="ENVIAR">
+
+                </form>
+            </article>
+            <article class="datos-contacto">
+                <h2>DATOS DE CONTACTO</h2>
+                <p>Dirección: Florencio Varela 1903 </p>
+                <p>Teléfonos: 4480-8900 / 4480-8901 </p>
+                <p>Celular: 11 3849 2930</p>
+                <p>Email: contacto@dipersalud.com.ar</p>
+                <p>Web: www.dipersalud.com.ar</p>
+            </article>
+        </section>
+        <section class="ubicacion">
+            <h2>UBICACIÓN</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13125.848886608266!2d-58.560971716101086!3d-34.66828197264421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1589152338627!5m2!1ses-419!2sar"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+
+    <footer class="containerFooter">
+        <div class="menu-inf">
+            <h4>Menu Inferior:</h4>
+            <p><a href="enfermedades.html">Enfermedades</a></p>
+            <p><a href="calendario.html">Vacunas</a></p>
+            <p><a href="hospitales.html">Hospitales</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+        </div>
+        <div class="redes-inf">
+            <h4>Redes Sociales:</h4>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

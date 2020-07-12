@@ -1,0 +1,343 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+	font-size: 2em;
+    text-align: center;
+}
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2em;
+}
+select {
+    width: 68%;
+    height: 2em;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-left: 6em;
+}
+iframe{
+    width: 100%;
+    height: 350px;
+}
+.nombre-enfermedad {
+    padding-top:20px;
+    padding-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.virus {
+    max-width: 100%;
+    width: 1550px;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+.datos-enfermedad {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.datos-enfermedad p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.detalles-enfermedad {
+    margin-top: 20px;
+}
+
+.formulario {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.formulario article {
+    display: flex;
+    flex-direction: column;
+}
+.formulario p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+.formulario label {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.formulario input[type="text"], input[type="number"] {
+    width: 88%;
+    height: 2em;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+.formulario input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+.formulario .form-inline {
+    display: flex;
+    justify-content: space-between;
+}
+.exterior{
+    margin-top: 3em;
+}
+.preguntas{
+    margin-top: 2em;
+}
+.form-inline input[type="number"] {
+    width: calc(44% * 2);
+}
+
+.form-inline-child {
+    width: 100%;
+}
+.error{
+    font-size: 0.8em;
+    color: red;
+}
+.telefono-form input[type="number"] {
+    width: 100%;
+}
+
+.inline-radio {
+    margin-top: 5px;
+}
+
+.paises-visitados {
+    width: 30%;
+    margin-top: 4px;
+}
+
+.separar {
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.ciudad-form input[type="text"] {
+    width: 100%;
+}
+
+.submit-form {
+    float: right;
+    padding: 8px;
+    background-color: #0063b2;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.submit-form:hover {
+    background-color: #008eff;
+}
+
+.sintomas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.sintomas h3 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sintomas img {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.medidas div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.medidas img {
+    width: 50%;
+}
+
+.hospital-cercano {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-hospital {
+    text-align: center;
+}
+
+.nombre-hospital h4 {
+    font-size: 1em;
+}
+
+.nombre-hospital p {
+    margin-bottom: 0.5em;
+}
+
+.foto-hospital {
+    display: block;
+    width: 40%;
+    margin: 1.5em auto 1.5em auto;
+}
+
+.terminos-condiciones {
+    text-decoration: none;
+}
+
+.terminos-condiciones:hover {
+    text-decoration: underline;
+}
+
+body > main > section.formulario > article:nth-child(2) > form > div:nth-child(13) > div.form-inline-child.ciudad-form > input {
+    width: 44%;
+}
+
+#paises-visitados-fila {
+    display: none;
+}
+
+#direccion {
+    display: none;
+}
+
+#form-nombre {
+    width: 100%;
+}
+
+@media screen and (max-width: 412px) {
+    .header-redes-container {
+        display: none;
+    }
+    .buscador {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:47em){
+    h1 {
+    	font-size: 3em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:60em){
+    h1 {
+    	font-size: 4em;
+        text-align: center;
+    }
+    h3 {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .datos-enfermedad {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: unset;
+        align-items: center;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .detalles-enfermedad {
+        margin-top: 0;
+    }
+
+    .datos-enfermedad p {
+        margin: 0 0 15px 50px;
+        font-size: 1.1em;
+    }
+    .formulario {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .formulario article {
+        width: 50%;
+    }
+    .formulario p {
+        margin-bottom: 15px;
+    }
+
+    .formulario form {
+        margin-left: 5em;
+    }
+
+    .formulario label {
+        display: block;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    .formulario input[type="text"], input[type="number"] {
+        width: 88%;
+        height: 30px;
+        border: 1px solid #b0b0b0;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .formulario input[type="radio"] {
+        margin-right: 0.5em;
+    }
+
+    .formulario .inline-radio {
+        margin-left: 10px;
+    }
+
+    .medidas img {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:80em){
+    h3 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .sintomas img {
+        width: 35%;
+    }
+
+    .medidas img {
+        width: 15%;
+    }
+
+    .nombre-hospital {
+        text-align: unset;
+    }
+
+    .foto-hospital {
+        margin: 1.5em 0 1.5em 0;
+    }
+}
+

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coronavirus | DiPer Salud</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos-enfermedad.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/7459688133.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/enfermedad.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <img src="img/logo.png" class="logo">
+
+            <!-- Buscador -->
+            <div class="buscador">
+                <form>
+                    <input list="buscador" placeholder="Buscar...">
+                    <datalist id="buscador">
+                        <option value="Coronavirus COVID-19"></option>
+                        <option value="Dengue"></option>
+                    </datalist>
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+
+            <div class="header-redes-container">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook header-redes"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter header-redes"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram header-redes"></i></a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="enfermedades.html">ENFERMEDADES</a>
+                </li>
+                <li>
+                    <a href="calendario.html">VACUNACION</a>
+                </li>
+                <li>
+                    <a href="hospitales.html">HOSPITALES</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="desplegable"></a>
+    </header>
+
+    <main>
+        <h1>Coronavirus COVID-19</h1>
+        <section>
+            <article class="datos-enfermedad">
+                <div>
+                    <img src="img/coronovirus.jpg" alt="coronavirus" class="virus">
+                </div>
+                <div class="detalles-enfermedad">
+                    <p>La enfermedad por coronavirus (COVID 19) es una ‎enfermedad infecciosa causada por un
+                        ‎coronavirus recientemente descubierto.</p>
+                    <p>Se detectó por primera vez en la ciudad china de Wuhan (provincia de Hubei), en diciembre de
+                        2019. Habiendo llegado a más de 100 territorios, el 11 de marzo de 2020 la Organización Mundial
+                        de la Salud la declaró pandemia.</p>
+                    <p>La mayoría de las personas que enferman de ‎COVID 19 experimentan síntomas de leves a ‎moderados
+                        y se recuperan sin tratamiento ‎especial.</p>
+                    <p>El virus que causa la COVID‑19 se transmite principalmente a través de las gotículas generadas
+                        cuando una persona infectada tose, estornuda o espira. Estas gotículas son demasiado pesadas
+                        para permanecer suspendidas en el aire y caen rápidamente sobre el suelo o las superficies.</p>
+                    <p>Usted puede infectarse al inhalar el virus si está cerca de una persona con COVID‑19 o si, tras
+                        tocar una superficie contaminada, se toca los ojos, la nariz o la boca.</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h3>Formulario de detecci&oacute;n (test) de Coronavirus COVID-19</h3>
+        </section>
+
+        <section class="formulario">
+            <article>
+                <p>Hola usuario! Si tienes síntomas de Coronavirus o has estado en contacto con una persona afectada
+                    deberías hacer un control y seguimiento diario de tus síntomas.</p>
+                <p>Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las
+                    indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptación de los
+                    términos y la política de privacidad descritos en <a href="#" class="terminos-condiciones">Ver las
+                        condiciones y políticas</a>.</p>
+                <div class="sintomas">
+                    <h3>S&iacute;ntomas</h3>
+                    <img src="recursos/24-fiebre-dolor-garganta.png">
+                    <img src="recursos/25-fiebre-dificultad-respirar.png">
+                    <img src="recursos/23-fiebre-tos.png" class="img-center">
+                </div>
+            </article>
+            <article>
+                <form action="#" method="POST" onsubmit="return validar()" name="form">
+                    <label for="nombre">Nombre y Apellido*</label>
+                    <input type="text" name="nombre" id="form-nombre">
+                    <div class="form-inline">
+                        <div class="form-inline-child">
+                            <label for="dni">DNI*</label>
+                            <input type="number" name="dni" id="form-dni">
+                            <div id="mensaje-dni" class="error"></div>
+                        </div>
+                        <div class="form-inline-child telefono-form">
+                            <label for="telefono">Teléfono*</label>
+                            <input type="number" name="telefono" id="form-telefono">
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-inline-child">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" name="ciudad">
+                        </div>
+                        <div class="form-inline-child inline-radio">
+                            <label for="sexo">Sexo</label>
+                            F <input type="radio" name="sexo" value="femenino">
+                            M <input type="radio" name="sexo" value="masculino">
+                        </div>
+                    </div>
+
+                    <div class="form-inline separar">
+                        <div class="form-inline-child">
+                            <label for="viaje">¿Has viajado al exterior de la República Argentina?</label>
+                        </div>
+                        <div class="form-inline-child">
+                            Sí <input type="radio" name="viaje" value="si" class="exterior"
+                                onclick="paisesVisitados(1)">
+                            No <input type="radio" name="viaje" value="no" class="exterior"
+                                onclick="paisesVisitados(0)">
+                        </div>
+                    </div>
+
+                    <div class="form-inline separar" id="paises-visitados-fila">
+                        <div class="form-inline-child paises-visitados">
+                            <label for="paises">Paises visitados</label>
+                        </div>
+                        <div class="form-inline-child">
+                            <select name="paises" id="paises">
+                                <option value=""></option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Italia">Italia</option>
+                                <option value="EEUU">EEUU</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="negrita">Por favor, indica los sintomas que presentas:*</p>
+
+                    <div class="form-inline separar">
+                        <div class="form-inline-child">
+                            <label for="fiebre">¿Tuviste Fiebre mayor a 38 grados?</label>
+                        </div>
+                        <div class="form-inline-child">
+                            Sí <input type="radio" name="fiebre" value="si" class="preguntas">
+                            No <input type="radio" name="fiebre" value="no" class="preguntas">
+                        </div>
+                    </div>
+
+                    <div class="form-inline separar">
+                        <div class="form-inline-child">
+                            <label for="cabeza">¿Tuviste Dolor de cabeza?</label>
+                        </div>
+                        <div class="form-inline-child">
+                            Sí <input type="radio" name="cabeza" value="si" class="preguntas">
+                            No <input type="radio" name="cabeza" value="no" class="preguntas">
+                        </div>
+                    </div>
+
+                    <div class="form-inline separar">
+                        <div class="form-inline-child">
+                            <label for="tos">¿Tuviste una tos persistente?</label>
+                        </div>
+                        <div class="form-inline-child">
+                            Sí <input type="radio" name="tos" value="si" class="preguntas">
+                            No <input type="radio" name="tos" value="no" class="preguntas">
+                        </div>
+                    </div>
+
+                    <div class="form-inline separar">
+                        <div class="form-inline-child">
+                            <label for="garganta">¿Tuviste Dolor de garganta?</label>
+                        </div>
+                        <div class="form-inline-child">
+                            Sí <input type="radio" name="garganta" value="si" class="preguntas">
+                            No <input type="radio" name="garganta" value="no" class="preguntas">
+                        </div>
+                    </div>
+
+                    <div class="form-inline separar">
+                        <div class="form-inline-child">
+                            <label for="respirar">¿Tuviste dificultad para respirar?</label>
+                        </div>
+                        <div class="form-inline-child">
+                            Sí <input type="radio" name="respirar" value="si" class="preguntas"
+                                onclick="mostrarDireccion(1)">
+                            No <input type="radio" name="respirar" value="no" class="preguntas"
+                                onclick="mostrarDireccion(0)">
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-inline-child" id="direccion">
+                            <label for="direccion">Direcci&oacute;n</label>
+                            <input type="text" name="direccion">
+                        </div>
+
+
+                        <div class="form-inline-child ciudad-form">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" name="ciudad" id="ciudad-input">
+                        </div>
+                    </div>
+
+                    <input type="submit" value="ENVIAR TEST" class="submit-form">
+                    <div id="mensaje-nombre" class="error"></div>
+                </form>
+            </article>
+        </section>
+
+        <section>
+            <article class="medidas">
+                <h3>Medidas de precauci&oacute;n</h3>
+                <div>
+                    <img src="recursos/14-lavarse-manos.png">
+                    <img src="recursos/16-tocar-nariz.png">
+                    <img src="recursos/15-estornudar.png">
+                    <img src="recursos/17-ventilar.png">
+                </div>
+                <div>
+                    <img src="recursos/18-limpiar-objetos.png">
+                    <img src="recursos/20-reducir-contacto.png">
+                    <img src="recursos/19-permanecer-domicilio.png">
+                    <img src="recursos/21-no-compartir-mate.png">
+                </div>
+            </article>
+        </section>
+        <section>
+            <h3>Hospital m&aacute;s cercano especializado en la enfermedad</h3>
+        </section>
+        <section class="hospital-cercano">
+            <article>
+                <div class="nombre-hospital">
+                    <h4>Hospital Dr. Alberto Balestrini</h4>
+                    <p>Telefono: 4620-2305</p>
+                    <p>Direcci&oacute;n: Av. Monseñor Bufano</p>
+                    <p>Ciudad: Ciudad Evita, Buenos Aires</p>
+                    <img src="img/hospital.jpg" alt="foto-hospital" class="foto-hospital">
+                </div>
+            </article>
+            <article>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13119.712278600657!2d-58.5338746217041!3d-34.70699415925397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf49c77b2f7b%3A0xd5052a953205c954!2sHospital%20Dr.%20Alberto%20Balestrini!5e0!3m2!1ses!2sar!4v1589148592288!5m2!1ses!2sar"
+                    width="830" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </article>
+        </section>
+    </main>
+
+    <footer class="containerFooter">
+        <div class="menu-inf">
+            <h4>Menu Inferior:</h4>
+            <p><a href="enfermedades.html">Enfermedades</a></p>
+            <p><a href="calendario.html">Vacunas</a></p>
+            <p><a href="hospitales.html">Hospitales</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+        </div>
+        <div class="redes-inf">
+            <h4>Redes Sociales:</h4>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
